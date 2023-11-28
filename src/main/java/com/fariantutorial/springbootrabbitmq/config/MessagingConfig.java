@@ -1,4 +1,4 @@
-package config;
+package com.fariantutorial.springbootrabbitmq.config;
 
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

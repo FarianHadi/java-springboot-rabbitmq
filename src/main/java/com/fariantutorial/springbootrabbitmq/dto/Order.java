@@ -1,4 +1,4 @@
-package dto;
+package com.fariantutorial.springbootrabbitmq.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

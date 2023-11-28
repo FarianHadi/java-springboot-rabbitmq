@@ -1,8 +1,8 @@
-package publisher;
+package com.fariantutorial.springbootrabbitmq.publisher;
 
-import config.MessagingConfig;
-import dto.Order;
-import dto.OrderStatus;
+import com.fariantutorial.springbootrabbitmq.config.MessagingConfig;
+import com.fariantutorial.springbootrabbitmq.dto.Order;
+import com.fariantutorial.springbootrabbitmq.dto.OrderStatus;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +15,7 @@ public class OrderPublisher {
     @Autowired
     private RabbitTemplate template;
 
-    @PostMapping()
+    @PostMapping
     public String bookOrder(@RequestBody Order order){
         order.setOrderId(UUID.randomUUID().toString());
         // restaurantService
